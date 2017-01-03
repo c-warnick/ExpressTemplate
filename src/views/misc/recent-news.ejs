@@ -1,0 +1,26 @@
+<% include ../_header %>
+
+<div id="primary" class="primary-content clearfix">
+    <div class="row">
+        <div class="col-md-24 content-body">
+            <h1 class="title"><%= headTitle %></h1>
+            <% jsonData.item.forEach(function(article){ %>
+
+                <div class="article">
+                    <h2 class="sub-title"><%= article.title[0] %> &nbsp; <span class="small"><%= APP.renderDate(article.pubDate[0]) %></span></h2>
+                    <%- article.description[0] %>
+                    <a href="<%= article.link[0] %>" >Read More</a>
+                </div>
+
+            <% }) %>
+
+        
+       </div>
+    </div>
+</div>
+
+<% if(sideNavigation) { %>
+   <% include ../_sidenav %>
+<% } %>
+
+<% include ../_footer %>

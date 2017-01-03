@@ -1,0 +1,41 @@
+module.exports.list = [   
+
+    {name:"bootstrap-colorpicker",path:"/matrix-admin-package/js/bootstrap-colorpicker.js",isAdmin:true}
+    ,{name:"bootstrap-datepicker",path:"/matrix-admin-package/js/bootstrap-datepicker.js",isAdmin:true}
+    ,{name:"bootstrap-wysihtml5",path:"/matrix-admin-package/js/bootstrap-wysihtml5.js",isAdmin:true}
+    ,{name:"bootstrap",path:"/matrix-admin-package/js/bootstrap.js",isAdmin:true}
+    ,{name:"bootstrap.min",path:"/matrix-admin-package/js/bootstrap.min.js",isAdmin:true}
+    ,{name:"excanvas.min",path:"/matrix-admin-package/js/excanvas.min.js",isAdmin:true}
+    ,{name:"fullcalendar.min",path:"/matrix-admin-package/js/fullcalendar.min.js",isAdmin:true}
+    ,{name:"jquery.dataTables.min",path:"/matrix-admin-package/js/jquery.dataTables.min.js",isAdmin:true}
+    ,{name:"jquery.easy-pie-chart",path:"/matrix-admin-package/js/jquery.easy-pie-chart.js",isAdmin:true}
+    ,{name:"jquery.flot.crosshair",path:"/matrix-admin-package/js/jquery.flot.crosshair.js",isAdmin:true}
+    ,{name:"jquery.flot.min",path:"/matrix-admin-package/js/jquery.flot.min.js",isAdmin:true}
+    ,{name:"jquery.flot.pie",path:"/matrix-admin-package/js/jquery.flot.pie.js",isAdmin:true}
+    ,{name:"jquery.flot.pie.min",path:"/matrix-admin-package/js/jquery.flot.pie.min.js",isAdmin:true}
+    ,{name:"jquery.flot.resize.min",path:"/matrix-admin-package/js/jquery.flot.resize.min.js",isAdmin:true}
+    ,{name:"jquery.flot.stack",path:"/matrix-admin-package/js/jquery.flot.stack.js",isAdmin:true}
+    ,{name:"jquery.gritter.min",path:"/matrix-admin-package/js/jquery.gritter.min.js",isAdmin:true}
+    ,{name:"jquery.min",path:"/matrix-admin-package/js/jquery.min.js",isAdmin:true}
+    ,{name:"jquery.peity.min",path:"/matrix-admin-package/js/jquery.peity.min.js",isAdmin:true}
+    ,{name:"jquery.ui.custom",path:"/matrix-admin-package/js/jquery.ui.custom.js",isAdmin:true}
+    ,{name:"jquery.uniform",path:"/matrix-admin-package/js/jquery.uniform.js",isAdmin:true}
+    ,{name:"jquery.validate",path:"/matrix-admin-package/js/jquery.validate.js",isAdmin:true}
+    ,{name:"jquery.wizard",path:"/matrix-admin-package/js/jquery.wizard.js",isAdmin:true}
+    ,{name:"masked",path:"/matrix-admin-package/js/masked.js",isAdmin:true}
+    ,{name:"matrix.calendar",path:"/matrix-admin-package/js/matrix.calendar.js",isAdmin:true}
+    ,{name:"matrix.charts",path:"/matrix-admin-package/js/matrix.charts.js",isAdmin:true}
+    ,{name:"matrix.chat",path:"/matrix-admin-package/js/matrix.chat.js",isAdmin:true}
+    ,{name:"matrix.dashboard",path:"/matrix-admin-package/js/matrix.dashboard.js",isAdmin:true}
+    ,{name:"matrix.form_common",path:"/matrix-admin-package/js/matrix.form_common.js",isAdmin:true}
+    ,{name:"matrix.form_validation",path:"/matrix-admin-package/js/matrix.form_validation.js",isAdmin:true}
+    ,{name:"matrix.interface",path:"/matrix-admin-package/js/matrix.interface.js",isAdmin:true}
+    ,{name:"matrix",path:"/matrix-admin-package/js/matrix.js",isAdmin:true}
+    ,{name:"matrix.login",path:"/matrix-admin-package/js/matrix.login.js",isAdmin:true}
+    ,{name:"matrix.popover",path:"/matrix-admin-package/js/matrix.popover.js",isAdmin:true}
+    ,{name:"matrix.tables",path:"/matrix-admin-package/js/matrix.tables.js",isAdmin:true}
+    ,{name:"matrix.wizard",path:"/matrix-admin-package/js/matrix.wizard.js",isAdmin:true}
+    ,{name:"select2.min",path:"/matrix-admin-package/js/select2.min.js",isAdmin:true}
+    ,{name:"wysihtml5-0.3.0",path:"/matrix-admin-package/js/wysihtml5-0.3.0.js",isAdmin:true}
+
+]

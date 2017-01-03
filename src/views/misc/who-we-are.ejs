@@ -1,0 +1,61 @@
+<% include ../_header %>
+
+<div id="primary" class="primary-content clearfix">
+    <div class="row">
+        <div class="col-md-14 content-body">
+            <h1 class="title"><%= headTitle %></h1>
+          
+            <p class="body-copy"></p>
+            <p class="body-copy"></p> 
+
+            <% if(bodyLinks){ %>
+                <ul>
+                    <% bodyLinks.forEach(function(link){ %>
+                        <li><a href="<%= link.link %>"><%= link.label %></a></li>
+                    <% }) %>
+                </ul>
+            <% } %>
+       </div>
+        <div class="col-md-10 content-aside">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-20">
+                    <h2 class="sub-title">Community</h2>
+                    <p class="body-copy">Belk's rich heritage of community involvement and philanthropy dates back to the company's founders who believed strongly in the importance of giving back to the communities that made the success of their company possible.</p>
+                        <% if(asideLinks[0].length > -1){ %>
+                            <ul>
+                                <% asideLinks[0].forEach(function(link){ %>
+                                    <li><a href="<%= link.link %>"><%= link.label %></a></li>
+                                <% }) %>
+                            </ul>
+                        <% } %>
+                </div>
+            </div>
+        <hr />
+        <div class="row">
+                <div class="col-md-4">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-20">
+                    <h2 class="sub-title">Careers</h2>
+                    <p class="body-copy">Belk's success over the years is a direct result of the dedication and service of its associates. Belk values its associates, providing fair compensation, comprehensive and competitive benefits packages, training programs and opportunities for advancement. We are looking for talented individuals who are interested in a career, not just a job.</p>
+                        <% if(asideLinks[1].length > -1){ %>
+                            <ul>
+                                <% asideLinks[1].forEach(function(link){ %>
+                                    <li><a href="<%= link.link %>"><%= link.label %></a></li>
+                                <% }) %>
+                            </ul>
+                        <% } %>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>
+
+<% if(sideNavigation) { %>
+   <% include ../_sidenav %>
+<% } %>
+
+<% include ../_footer %>

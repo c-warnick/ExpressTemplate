@@ -1,0 +1,49 @@
+<% include ../_header %>
+
+<div id="primary" class="primary-content clearfix">
+    <div class="row">
+        <div class="col-md-14 content-body">
+            <h1 class="title"><%= headTitle %></h1>
+            <% for(var i = 0; i < 3; i++){ %>
+                <div class="article">
+                    <h2 class="sub-title"><%= jsonData.item[i].title[0] %> &nbsp; <span class="small"><%= APP.renderDate(jsonData.item[i].pubDate[0]) %></span></h2>
+                    <%- jsonData.item[i].description[0] %>
+                    <a href="<%= jsonData.item[i].link[0] %>" >Read More</a>
+                </div>
+
+            <% } %>
+
+        
+       </div>
+       <div class="col-md-10 content-aside">
+           <div class="row">
+                <div class="col-md-4">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-20">
+                    <h2 class="sub-title"><%= asideTitles[0] %></h2>
+                    <p class="body-copy">
+                        <b>News media may submit inquiries about Belk to:</b><br>
+                        Jessica Graham<br>
+                        Vice President, Communications and Community Relations<br>
+                        Belk, Inc.<br>
+                        <a href="mailto:Jessica_Graham@belk.com">Jessica_Graham@belk.com</a>
+                    </p>
+                        <% if(asideLinks[0].length > 0){ %>
+                            <ul>
+                                <% asideLinks[0].forEach(function(link){ %>
+                                    <li><a href="<%= link.link %>"><%= link.label %></a></li>
+                                <% }) %>
+                            </ul>
+                        <% } %>
+                </div>
+            </div>
+       </div>
+    </div>
+</div>
+
+<% if(sideNavigation) { %>
+   <% include ../_sidenav %>
+<% } %>
+
+<% include ../_footer %>

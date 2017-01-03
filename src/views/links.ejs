@@ -1,0 +1,39 @@
+<div class="c_group">
+    <% for(var key in links){ var link = links[key]; %>
+        <div class="col-xs-8">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div style="background:url(<%= link.image %>);background-size:cover;">
+                        <div class="c_image">
+                            <img src="/images/16x9.png" />
+                            
+                            <div class="c_overlay " style="background:rgba(0,0,0,.7)">
+                                <div class="c_overlay__content c_centered-xs--bottom ">
+                                    <a class="ff-white" href="<%= link.url %>" alt="<%= link.alt %>">
+                                     <%= link.abbr %> - <small><%= link.subtitle %></small>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="c_overlay c_grid__default-xs--top-right">
+                                <div class="c_overlay__content c_centered-xs--top c_text--right ff-white">
+                                    <% for(var key in link.mocks){ var mock = link.mocks[key]; %>
+                                        <a class="ff-white" href="<%= mock %>" target="_blank">
+                                        <% if(key == 'mobile'){ %>
+                                            <i class="fa fa-mobile fa-2" aria-hidden="true"></i>
+                                        <% }else if(key == 'tablet'){ %>
+                                            <i class="fa fa-tablet fa-2" aria-hidden="true"></i>
+                                        <% }else{ %>
+                                            <i class="fa fa-desktop fa-2" aria-hidden="true"></i>
+                                        <% } %>
+                                        </a>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <% } %>
+</div>
