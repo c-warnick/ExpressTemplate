@@ -1,0 +1,19 @@
+<header class="bs-docs-nav navbar navbar-static-top" id="top">
+	<div class="container">
+		<div class="navbar-header">
+			<button aria-controls="bs-navbar" aria-expanded="false" class="collapsed navbar-toggle" data-target="#bs-navbar" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="../">Bootstrap</a>
+		</div>
+		<nav class="collapse navbar-collapse" id="bs-navbar">
+			<ul class="nav navbar-nav">
+				<% for(var link in links){ %>
+					<li class="active">
+						<a href="<%= links[link].url %>"><%= links[link].abbr %></a>
+					</li>
+				<% } %>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				
+			</ul>
+		</nav>
+	</div>
+</header>

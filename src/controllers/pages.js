@@ -1,6 +1,6 @@
 var _ = require('underscore');
 var http = require('http');
-var nav = require('../helpers/navigation');
+var _ps = require('../page-settings');
 var vriFn = require('../helpers/function');
 
 
@@ -9,18 +9,19 @@ exports.index = function(req, res) {
 
   var locals = {
       headTitle: 'Belk',
-      content:'../../homepage/index',
-      pageClass:"pt_storefront",
-      mainClass:"",
-      links:nav.links,
-      sideNavigation: false
+      content:'../pages/index',
+      page:{
+            title:"Documentation",
+            description:"An overview of Belks new eCommerce site."
+          },
+      links: _ps.pages
     }
 
   if(req.session.session.post !== undefined) {
     delete req.session.session.post;
   }
 
-  res.renderView('body/home/_body', locals);
+  res.renderView('main-template/_main', locals);
 
 };
 
@@ -28,7 +29,7 @@ exports.dynamicPageLoader = function(req, res) {
    
 
     var content = '';
-    var page = nav.links[req.params.page.replace(/\-/g,'')];
+    var page = pageSettings.pages[req.params.page.replace(/\-/g,'')];
     console.log(req.params.page);
     console.log(req.params.drop);
     console.log(req.params.page.replace(/\-/g,''));
@@ -42,10 +43,8 @@ exports.dynamicPageLoader = function(req, res) {
     }   
     
     var locals = {
-      content: '../../' + content,
-      pageClass: page.pageClass || "pt_customer-service",
-      mainClass:"",
-      links: nav.links,
+      content: 'pages/' + content,
+      links: _ps.pages,
       page:page,
       sidenavigation: undefined
     }

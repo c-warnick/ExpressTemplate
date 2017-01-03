@@ -5,7 +5,7 @@ var xml2js = require('xml2js');
 var moment = require('moment');
 var fs = require('fs');
 var path = require('path');
-var QUERY = require('./parse-queries');
+
 
 /**
  * trim string
@@ -343,25 +343,6 @@ module.exports.parseStringData = function(input) {
           return deferred.promise;
 
 };
-/**
- * Retrieve Page Info
- * Deprecated: Moved to helpers/admin.getAdminConfiguration
- * 
- */
 
-module.exports.getPage = function(req, res, next){
-
-        var pageName = req.params.pageName;
-
-        if(!pageName && pageName == "")
-           pageName = "Dashboard";
-
-         QUERY.getCurrentPage(pageName,function(results){
-
-             req.session.page = results;
-
-             return next();
-         });
-    };
 
 

@@ -58,7 +58,7 @@ app.locals._ = require('underscore');
 // Pass the Express instance to the routes module
 var routes = require('./routes/routes')(app);
 
-var port = process.env.PORT || 1337;
+var port = process.env.PORT || 1338;
 var httpServer = require('http').createServer(app);
 httpServer.listen(port, function() {
     console.log('parse-server-example running on port ' + port + '.');
