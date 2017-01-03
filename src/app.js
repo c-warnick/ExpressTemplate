@@ -40,6 +40,7 @@ app.use(function(req, res, next) {
   if (req.session.session === undefined) {
     req.session.session = {};
   }
+  // comment out and set via authentication function to enable.
   req.session.authenticated = true;
   next();
 });
